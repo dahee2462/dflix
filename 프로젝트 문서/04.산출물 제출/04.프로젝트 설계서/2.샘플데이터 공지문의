@@ -1,0 +1,27 @@
+사용금지 맴버가 없이 이것만 추가하면 고장남
+
+DELIMITER $$
+DROP PROCEDURE IF EXISTS loopInsert$$
+ 
+CREATE PROCEDURE loopInsert()
+BEGIN
+    DECLARE i INT DEFAULT 1;
+        
+    WHILE i <= 10 DO
+    
+     -- 공지사항  
+		INSERT INTO board(btitle,bcontent,btype,mno)
+          VALUES(concat('공지사항제목입니다.',i),concat('공지사항내용입니다.',i),'공지',i);
+          
+	-- 문의사항  
+		INSERT INTO board(btitle,bcontent,btype,mno)
+          VALUES(concat('문의사항제목입니다.',i),concat('문의사항내용입니다.',i),'문의',i);
+    
+    
+     SET i = i + 1;
+    END WHILE;
+END$$
+DELIMITER $$board
+
+
+CALL loopInsert;

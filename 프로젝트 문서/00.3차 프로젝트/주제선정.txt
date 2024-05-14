@@ -1,0 +1,29 @@
+대표적인 티켓팅 사이트
+1. 인터파크 – https://tickets.interpark.com/
+2. 티켓링크 – https://www.ticketlink.co.kr/home
+3. 티켓베이 – https://m.ticketbay.co.kr/main
+4. 예스24 – http://ticket.yes24.com/New/Main.aspx
+5. W공연티켓 – https://ticket.wemakeprice.com/
+
+1. 영화(CGV, MEGA BOX, LOTTE CINEMA) 
+   – https://github.com/yuuisang/spring-movie-reserve-restfull (개인프로젝트)
+   - https://loy124.tistory.com/193 (게인프로젝트)
+뮤지컬 개인프로젝트
+
+2. 버스 예매 시스템(버스타고, 고속버스 예매) 
+   – https://www.bustago.or.kr/newweb/kr/ticket/ticket.do (공공사이트)
+   - https://www.kobus.co.kr/mrs/rotinf.do (공공사이트)
+
+3. 기차 예매 시스템(korail)
+   – https://www.letskorail.com (공공사이트)
+
+4. 비행기 예약(skyscanner)
+   - https://www.skyscanner.co.kr/ (공공사이트)
+
+결제시스템 api
+1. kakao developers 카카오페이 테스트 api
+2. 아임포트(import) 테스트 전용 결제 api
+
+공공데이터 api
+
+주제 선정 - 영화

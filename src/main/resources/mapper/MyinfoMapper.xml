@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD config 3.0//EN"
+						"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ezen.dteam.mapper.myinfoMapper">
+
+
+	<select id="selectMyinfo" parameterType="String" resultType="MemberVO">
+		 SELECT mid, mname, mpw, mnickNm, authority, enabled, mbirth, memail, mgender, mjoinDate, mphone, mno 
+		 FROM member 
+		 WHERE mid = #{value}
+	</select>
+	<select id="checkEmail" parameterType="String" resultType="int">
+		select count(*) from member where memail = #{memail}
+	</select>
+
+	<update id="updateMyinfo" parameterType="MemberVO"> 
+		Update member 
+			set mname =#{mname} , mpw = #{mpw}, memail =#{memail},  
+			 mphone = #{mphone} , mbirth = #{mbirth} , mgender = #{mgender} 
+			where mid = #{mid}
+	</update>
+	<update id="deleteMyinfo" parameterType="MemberVO"> 
+		Update member 
+			set isWithdrawn = 1  
+			where mid = #{mid}
+	</update>
+	<select id="selectMyticket" parameterType="TicketVO" resultType="TicketVO"> 
+		SELECT
+			t.ticketno, t.ticketTime, t.ticketDelyn, t.mno
+			FROM ticket t 
+			where mno = #{value} and ticketDelyn = 0
+			group by t.ticketno;
+	</select>
+	<select id="selectTicketDetail" parameterType="String" resultType="TicketDetailVO">
+		SELECT td.*,ss.*, sh.*,sc.*, 
+				th.tname, th.tno, c.cname, c.cno 
+				FROM ticketDetail td
+		inner join screenSeat ss on ss.sseatno = td.sseatno 
+		inner join screenHall sh on sh.shallno= ss.shallno 
+		inner join screen sc on sc.sno = td.sno 
+		inner join theater th on th.tno = sh.tno 
+		inner join cinema c on c.cno = sc.cno 
+		where ticketno=#{value};
+	</select>
+	<update id="deleteMyticket" parameterType="String">
+		update ticket set ticketDelyn = 1   
+		where ticketno = #{value};
+	</update>
+</mapper>

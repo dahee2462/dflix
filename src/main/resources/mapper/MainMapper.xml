@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD config 3.0//EN"
+						"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ezen.dteam.mapper.mainMapper">
+
+	
+	<select id="selectBoxOfficeCinema" resultType="CinemaVO">
+	<![CDATA[
+		SELECT * FROM cinema WHERE crank < 7 ORDER BY crank ASC
+	]]>
+	</select>
+	
+	<insert id="upsertMovieList" parameterType="CinemaVO">
+	    INSERT INTO cinema(ccode, cname, cnameEn, cintro, cprdtYear, cshowTime, copenDate, 
+	    					cprdtStatNm, cnationNm, cgenreNm, cdirectorNm, cdirectorNmEn, 
+	    					cactorNm, cactorNmEn, ccompanyNm, ccompanyNmEn, cwatchGradeNm, cposter)
+	    VALUES (#{ccode}, #{cname}, #{cnameEn}, #{cintro}, #{cprdtYear}, #{cshowTime}, #{copenDate}, 
+	            #{cprdtStatNm}, #{cnationNm}, #{cgenreNm}, #{cdirectorNm}, #{cdirectorNmEn}, 
+	            #{cactorNm}, #{cactorNmEn}, #{ccompanyNm}, #{ccompanyNmEn}, #{cwatchGradeNm}, 
+	            #{cposter})
+	    ON DUPLICATE KEY UPDATE cname = #{cname},
+					            cnameEn = #{cnameEn}, 
+					            cintro = #{cintro},
+					            cprdtYear = #{cprdtYear},
+					            cshowTime = #{cshowTime},
+					            copenDate = #{copenDate},
+					            cprdtStatNm = #{cprdtStatNm},
+					            cnationNm = #{cnationNm}, 
+					            cgenreNm = #{cgenreNm},
+					            cdirectorNm = #{cdirectorNm},
+					            cdirectorNmEn = #{cdirectorNmEn}, 
+					            cactorNm = #{cactorNm},
+					            cactorNmEn = #{cactorNmEn},
+					            ccompanyNm = #{ccompanyNm},
+					            ccompanyNmEn = #{ccompanyNmEn},
+					            cwatchGradeNm = #{cwatchGradeNm},
+					            cposter = #{cposter}
+	</insert>
+	<update id="updateMovieRankNull" parameterType="CinemaVO">
+		UPDATE cinema SET crank = null;
+	</update>
+	
+	<update id="updateMovieRank" parameterType="CinemaVO">
+		UPDATE cinema
+		SET crank = CASE WHEN cname = #{cname} THEN #{crank} ELSE null END
+		WHERE cname = #{cname};
+	</update>
+	
+	<select id="selectUnopen" resultType="CinemaVO">
+		SELECT  *, DATEDIFF(now(), copenDate) AS dday FROM dflix.cinema WHERE cprdtStatNm = '미개봉' AND DATE(copenDate) != CURDATE() ORDER BY copenDate ASC LIMIT 6 ;
+	</select>
+	
+</mapper>

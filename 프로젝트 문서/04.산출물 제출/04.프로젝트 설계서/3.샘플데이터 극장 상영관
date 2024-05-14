@@ -1,0 +1,43 @@
+delete from theater;
+delete from screenHall;
+
+SELECT * FROM dflix.cinema;
+
+DELETE FROM dflix.cinema WHERE crank = 1;
+
+ALTER TABLE dflix.cinema AUTO_INCREMENT = 1;
+
+
+
+-- 극장 샘플 DB 추가-- 
+INSERT INTO theater(tno, tname, tnameEn, taddr, tintro, tcall)
+   VALUES (1, '전주극장', 'JeonJuTheater', '전라북도 전주시 완산구 용머리로 45', '전주시 dflix 극장입니다.', '063-000-0001');
+INSERT INTO theater(tno, tname, tnameEn, taddr, tintro, tcall)
+   VALUES (2, '익산극장', 'IkSanTheater', '전라북도 익산시 무왕로 1052', '익산시 dflix 극장입니다.', '063-000-0002');
+
+
+-- 상영관정보 샘플 DB 추가 --
+INSERT INTO screenHall(shallSeat, shallType, shallLocation, tno)
+   VALUES ('300','2D','2층 1관','1');
+INSERT INTO screenHall(shallSeat, shallType, shallLocation, tno)
+   VALUES ('250','2D','2층 2관','1');
+INSERT INTO screenHall(shallSeat, shallType, shallLocation, tno)
+   VALUES ('300','2D','2층 3관','1');
+INSERT INTO screenHall(shallSeat, shallType, shallLocation, tno)
+   VALUES ('280','3D','3층 1관','2');
+INSERT INTO screenHall(shallSeat, shallType, shallLocation, tno)
+   VALUES ('290','3D','3층 2관','2');
+INSERT INTO screenHall(shallSeat, shallType, shallLocation, tno)
+   VALUES ('300','3D','3층 3관','2');
+   
+-- 상영정보
+INSERT INTO screen(sstartTime, sendTime, cno, shallno, sday)
+ VALUES ("12:00","13:39",1,1,(current_date));
+
+INSERT INTO screen(sstartTime, sendTime, cno, shallno, sday)
+ VALUES ("15:00","16:39",1,1,(current_date));
+ 
+INSERT INTO screen(sstartTime, sendTime, cno, shallno, sday)
+	VALUES ("15:00","16:33",2,2,(current_date));
+   
+   

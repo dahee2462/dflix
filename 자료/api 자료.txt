@@ -1,0 +1,22 @@
+영화 순위 정보
+회원가입
+공지, 문의 게시판
+영화 평접 및 리뷰
+극장별 날짜, 상영 영화 및 시간 조회
+영화 예매 기능
+좌석선택
+결제
+
+
+로그인 api 전부 다 나와있음 https://tyrannocoding.tistory.com/60
+이게 가장 베스트 
+로그인 연동은 카카오, 네이버, 구글로 진행하고 
+회원가입 인증은 이메일 인증으로 진행하는 것이 좋은 방향
+
+
+api없이 무료로 핸드폰 본인인증 https://obtuse.kr/dev/free-phone-verification/
+
+쿨에스엠에스 무료 15건 제공 https://bdev.tistory.com/13
+
+oauth 인증 사이트 - 무료로 진행? https://www.oauth.network/
+

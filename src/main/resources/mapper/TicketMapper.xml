@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD config 3.0//EN"
+						"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ezen.dteam.mapper.ticketMapper">
+
+	<select id="selectTheater" resultType="TheaterVO">
+		SELECT * FROM theater
+	</select>
+	
+	<select id="selectMovie" resultType="CinemaVO">
+	<![CDATA[
+		SELECT * FROM dflix.cinema WHERE copenDate BETWEEN DATE_SUB(NOW(), INTERVAL 1 MONTH) AND DATE_ADD(NOW(), INTERVAL 2 WEEK) OR crank < 11 ORDER BY crank IS NULL, CAST(crank AS UNSIGNED) ASC
+	]]>
+	</select>
+	
+	<select id="selectMovieCode" resultType="CinemaVO">
+	<![CDATA[
+		SELECT * FROM dflix.cinema WHERE ccode = #{movieCode}
+	]]>
+	</select>
+	
+	<select id="selectScreenHall" resultType="ScreenHallVO">
+		SELECT theater.*, screenHall.* FROM screenHall INNER JOIN theater ON theater.tno = screenHall.tno WHERE theater.tno = #{tno}
+	</select>
+
+	<select id="selectScreen" resultType="ScreenVO" parameterType="screenVO">
+		SELECT theater.*, screenHall.*, s.*, c.cno, c.cname
+		FROM screenHall
+		INNER JOIN theater ON theater.tno = screenHall.tno
+		INNER JOIN screen s ON screenHall.shallno = s.shallno
+		INNER JOIN cinema c ON c.cno = s.cno
+		WHERE theater.tno = #{tno} AND s.sday = #{sday} AND s.cno = #{cno}
+		AND CONCAT(s.sday, ' ', s.sstartTime) > (
+			SELECT DATE_FORMAT(NOW(), '%Y-%m-%d %H:%i')
+		    )
+		ORDER BY s.sno
+	</select>
+	
+	<select id="selectScreenSeat" resultType="ScreenSeatVO">
+		SELECT c.cno, c.cname, ss.*, sh.*, s.*, t.tno, t.tname
+		FROM screenSeat ss
+		INNER JOIN screenHall sh ON ss.shallno = sh.shallno
+		INNER JOIN screen s ON sh.shallno = s.shallno
+		INNER JOIN cinema c ON c.cno = s.cno
+		INNER JOIN theater t ON t.tno = sh.tno
+		WHERE  t.tno = #{tno} AND s.sday = #{sday} AND s.cno = #{cno} AND s.shallno = #{shallno} AND s.sstartTime = #{sstartTime};
+	</select>
+	
+	<select id="selectUseingSeat" resultType="ScreenSeatVO">
+		SELECT * 
+		FROM ticketDetail td, screen s, cinema c, screenHall sh
+		WHERE td.sno = s.sno
+		  AND s.cno=c.cno
+		  AND s.shallno = sh.shallno
+		  AND c.cno = #{cno}
+		  AND s.sstartTime = #{sstartTime}
+		  AND s.sno = #{sno};
+	</select>
+	
+	<select id="selectCheckSeat" resultType="TicketDetailVO">
+	<![CDATA[
+		SELECT * FROM ticketDetail td
+		INNER JOIN ticket t ON td.ticketno = t.ticketno
+		INNER JOIN screenseat ss ON td.sseatno = ss.sseatno
+		WHERE td.sseatno = #{sseatno} AND t.mno = #{mno}
+	]]>
+	</select>
+	
+	<insert id="insertTicket" parameterType="int" >
+		INSERT INTO ticket (ticketTime, ticketDelyn, mno) 
+        VALUES (NOW(), 0, #{mno})
+	</insert>
+	
+	<select id="last_id" resultType="int">
+		SELECT ticketno from ticket order by ticketno desc limit 0,1
+	</select>
+		
+	<insert id="reserveTicket" parameterType="TicketDetailVO">
+        <![CDATA[
+            INSERT INTO ticketDetail(ticketno, sno, sseatno, ticketDate)
+            VALUES (#{ticketno}, #{sno}, #{sseatno}, date(NOW()));
+        ]]>
+    </insert>
+    
+    <select id="selectShallSeatAll" resultType="int">
+    	SELECT shallSeat FROM screenHall sh WHERE sh.shallno = (SELECT shallno FROM screen sc WHERE sno = #{sno});
+    </select>
+	
+	<select id="selectShallSeatUseing" resultType="int">
+		SELECT count(td.ticketno) FROM ticketDetail td INNER JOIN ticket tk ON td.ticketno = tk.ticketno WHERE td.sno = (SELECT sno FROM screen sc WHERE sno = #{sno}) AND tk.ticketDelyn = 0;
+	</select>
+	
+	
+</mapper>

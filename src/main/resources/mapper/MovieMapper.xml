@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD config 3.0//EN"
+						"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ezen.dteam.mapper.movieMapper">
+	<select id="selectBoxOfficeCinema" parameterType="PagingVO" resultType="CinemaVO">
+	<![CDATA[
+		SELECT * FROM cinema WHERE copenDate <= CURDATE() ORDER BY crank IS NULL, CAST(crank AS UNSIGNED), crank ASC limit ${start-1},#{perPage}
+	]]>
+	</select>
+	<select id="selectUnopen"  parameterType="PagingVO" resultType="CinemaVO">
+		SELECT  *, DATEDIFF(now(), copenDate) AS dday FROM dflix.cinema 
+		WHERE cprdtStatNm = '미개봉' AND DATE(copenDate) != CURDATE() ORDER BY copenDate 
+		ASC limit ${start-1},#{perPage} ;
+	</select>
+	<select id="selectAllCnt" resultType="int">
+		select count(*) from cinema WHERE cprdtStatNm = '개봉';
+	</select>
+	<select id="selectAllCntUnopen" resultType="int">
+		select count(*) from cinema WHERE cprdtStatNm = '미개봉';
+	</select>
+	
+	<select id="selectMovieDetail" parameterType="String" resultType="CinemaVO" >
+		SELECT * FROM cinema WHERE cno = #{value}
+	</select>
+	
+	<select id="selectReplyCno" parameterType="String" resultType="CinemaReplyVO">
+		select cr.*, m.mnickNm from cinemaReply cr 
+		inner join member m on cr.mno = m.mno 
+		where cno = #{value}
+	</select>
+	<insert id="insertReply" parameterType="CinemaReplyVO">
+		insert into cinemaReply (ccmtContent, ccmtRdate,ccmtDelyn,cno,mno) 
+		values (#{ccmtContent}, now(), 0, #{cno}, #{mno});
+	</insert>
+	<update id="updateReply" parameterType="CinemaReplyVO">
+		UPDATE cinemaReply
+		SET ccmtContent = #{ccmtContent}, ccmtRdate = NOW() 
+		where ccmtno = #{ccmtno}
+	</update>
+	<delete id="deleteReply" parameterType="String">
+		delete from cinemaReply where ccmtno = #{value}
+	</delete>
+</mapper>

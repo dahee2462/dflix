@@ -1,0 +1,108 @@
+{
+"modDate":"20240319",
+"keywords":"로맨스, 미디어, 텔레비전, 우정",
+"nation":"미국",
+"kmdbUrl":"https:\/\/www.kmdb.or.kr\/db\/kor\/detail\/movie\/F\/06400",
+"use":"극장용",
+"directors":{
+    "director":[{"directorId":"00049080","directorNm":"벤 스틸러","directorEnNm":"Ben Stiller"}]
+    },
+"ALIAS":"srcKmdb2",
+"rating":"",
+"movieSeq":"06400",
+"regDate":"19000101",
+"movieId":"F",
+"Awards1":"",
+"title":" 청춘스케치",
+"type":"극영화",
+"Awards2":"",
+"screenArea":"",
+"DOCID":"F06400",
+"titleEtc":"청춘스케치^Reality Bites^청춘스케치(기타), 청춘 스케치^Reality Bites",
+"fLocation":"",
+"ratings":{
+    "rating":[{
+        "ratingNo":"",
+        "ratingDate":"",
+        "releaseDate":"20240401",
+        "ratingMain":"Y",
+        "runtime":"99",
+        "ratingGrade":""}]
+        },
+"genre":"코메디,드라마,멜로\/로맨스,청춘영화",
+"company":"Jersey Films,Universal Pictures",
+"repRlsDate":"20240401",
+"audiAcc":"",
+"episodes":"",
+"staffs":{
+    "staff":[{
+        "staffRoleGroup":"감독",
+        "staffRole":"",
+        "staffEnNm":"Ben Stiller",
+        "staffEtc":"","staffNm":"벤 스틸러","staffId":"00049080"},
+        {"staffRoleGroup":"각본","staffRole":"","staffEnNm":"","staffEtc":"","staffNm":"헬렌 칠드레스","staffId":""},
+        {"staffRoleGroup":"출연","staffRole":"레이나 피어스","staffEnNm":"Winona Ryder","staffEtc":"","staffNm":"위노나 라이더","staffId":"00048498"},
+        {"staffRoleGroup":"출연","staffRole":"트로이 다이어","staffEnNm":"Ethan Hawke","staffEtc":"","staffNm":"에단 호크","staffId":"00048620"},
+        {"staffRoleGroup":"출연","staffRole":"비키 마이너","staffEnNm":"Janeane Garofalo","staffEtc":"","staffNm":"잔느 가로팰로","staffId":"00086616"},
+        {"staffRoleGroup":"출연","staffRole":"새미 그레이","staffEnNm":"Steve Zahn","staffEtc":"","staffNm":"스티브 잔","staffId":"00117906"},
+        {"staffRoleGroup":"출연","staffRole":"마이클 그레이츠","staffEnNm":"Ben Stiller","staffEtc":"","staffNm":"벤 스틸러","staffId":"00049080"},{"staffRoleGroup":"출연","staffRole":"샬레인 맥그리거","staffEnNm":"Swoosie Kurtz","staffEtc":"","staffNm":"수지 커츠","staffId":"00118417"},
+        {"staffRoleGroup":"출연","staffRole":"톰 피어스","staffEnNm":"Joe Don Baker","staffEtc":"","staffNm":"조 돈 베이커","staffId":"00089352"},
+        {"staffRoleGroup":"제작자","staffRole":"","staffEnNm":"Danny DeVito","staffEtc":"","staffNm":"대니 드비토","staffId":"00048593"},
+        {"staffRoleGroup":"제작자","staffRole":"","staffEnNm":"Michael Shamberg","staffEtc":"","staffNm":"마이클 샘버그","staffId":"00102895"},{"staffRoleGroup":"제작자","staffRole":"","staffEnNm":"","staffEtc":"","staffNm":"로리-에타 타브","staffId":""},{"staffRoleGroup":"제작사","staffRole":"","staffEnNm":"","staffEtc":"","staffNm":"Jersey Films","staffId":""},{"staffRoleGroup":"제작사","staffRole":"","staffEnNm":"","staffEtc":"","staffNm":"Universal Pictures","staffId":""}]
+        },
+"statDate":"",
+"soundtrack":"",
+"stat":[{
+    "statDate":"",
+    "salesAcc":"",
+    "screenCnt":"",
+    "audiAcc":"",
+    "statSouce":"",
+    "screenArea":""
+    }],
+"Codes":{
+    "Code":[{
+        "CodeNo":"",
+        "CodeNm":""
+        }]
+    },
+"titleOrg":"Reality Bites",
+"salesAcc":"",
+"ratedYn":"",
+"posters":"http:\/\/file.koreafilm.or.kr\/thm\/02\/99\/18\/37\/tn_DPF029018.jpg",
+"runtime":"99",
+"repRatDate":"",
+"screenCnt":"",
+"prodYear":"1993",
+"CommCodes":{
+    "CommCode":[{
+        "CodeNo":"",
+        "CodeNm":""
+    }]
+    },
+"titleEng":"",
+"plots":{
+    "plot":[{
+        "plotText":"\u201C우리는 이것만 있으면 돼.담배 몇 개피, 커피 한 잔, 그리고 약간의 대화.너, 나, 그리고 5달러.\u201D다큐멘터리 감독을 꿈꾸며 어렵게 방송국에 입사한 리레이나, 자유로운 영혼을 가진 가수 지망생 트로이, 그리고 대학 동기 비키와 새미까지.대학을 갓 졸업하고 이제 막 사회생활을 시작한 4명의 청춘 앞에 놓인 현실이 녹록지 않다.꿈을 쫓아가다 부딪힌 냉혹한 현실에 때론 좌절도 하지만, 서로를 향한 사랑과 응원으로 희망을 잃지 않는다.꿈과 사랑을 찾아 낭만과 불안 사이에서 방황하는 청춘들의 바이블.",
+        "plotLang":"한국어"
+        }]
+    },
+"actors":{
+    "actor":[
+        {"actorId":"00048498","actorNm":"위노나 라이더","actorEnNm":"Winona Ryder"},
+        {"actorId":"00048620","actorNm":"에단 호크","actorEnNm":"Ethan Hawke"},
+        {"actorId":"00086616","actorNm":"잔느 가로팰로","actorEnNm":"Janeane Garofalo"},
+        {"actorId":"00117906","actorNm":"스티브 잔","actorEnNm":"Steve Zahn"},
+        {"actorId":"00049080","actorNm":"벤 스틸러","actorEnNm":"Ben Stiller"},
+        {"actorId":"00118417","actorNm":"수지 커츠","actorEnNm":"Swoosie Kurtz"},
+        {"actorId":"00089352","actorNm":"조 돈 베이커","actorEnNm":"Joe Don Baker"}]
+    },
+"themeSong":"",
+"openThtr":"",
+"stlls":"",
+"statSouce":"",
+"vods":{
+    "vod":[{
+        "vodUrl":"","vodClass":""}]
+        }
+}

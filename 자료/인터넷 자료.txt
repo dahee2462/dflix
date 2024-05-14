@@ -1,0 +1,6 @@
+아임포트 결제가이드 - https://github.com/iamport/iamport-manual
+카카오페이 결제 - https://velog.io/@hyeon5819/23.6.7-TIL
+
+개인프로젝트 - https://github.com/yuuisang/spring-movie-reserve-restfull?tab=readme-ov-file
+
+개인 프로젝트 - https://lionpower.tistory.com/343

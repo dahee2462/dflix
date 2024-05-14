@@ -1,0 +1,24 @@
+-rootContext.xml
+mysql://퍼블릭ip:3306?ateam
+user:awsuser
+pw:@rootAWS3db
+
+저장하고 이제서야 배포파일 만듦(export)
+파일질라(클라우드pc에 접근): 서버모양 
+-새사이트(새로운 연결정보)
+-프로토콘: SFTP, 호스트:퍼블릭ip, 포트:22
+-로그온유형: 키파일, 사용자:ec2-user
+(콘솔-인스턴스-연결이름 ec2-user)
+키파일(파일확장자 바꿔야 보임)
+연결
+
+왼편(내 배포파일) -> usr/local(ec2) :더블클릭 or 끌어놓기
+ec2에서 도커작업
+- 키페어가 있는 위치로 가서 cmd
+-ssh클라이언트 카피해서 cmd에 붙여넣고 엔터
+연결
+
+도커 cp 배포파일명 컨테이너이름(myweb):옮기고 싶은 경로/usr/local/tomcat/webapps
+배포파일의 이름이 projectPath가 됨
+
+public IP/배포파일명 -> 알아서 배포가 됨

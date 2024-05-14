@@ -1,0 +1,40 @@
+1.도커 설치
+sudo yum install docker -y
+
+2.도커 실행
+sudo service docker start
+
+3.권한 부여
+sudo usermod -aG docker ec2-user(컴퓨터이름)
+
+4.현재 사용자 그룹 변경
+newgrp docker 
+
+
+cmd 명령어
+톰캣 이미지 다운받기
+docker pull tomcat:9.0
+컨테이너 만들기
+docker run -it -d --name myweb -p 80:8080 tomcat:9.0
+터미널 들어가기
+docker exec -it myweb bash
+webapps.dist 하위 모든 파일을 webapps로 복사
+cp -r webapps.dist/* webapps
+
+filezila
+해당 파일의 쓰기 권한 주기
+sudo chmod -R 777 /usr/local/
+usr/local에 war 파일 넣기
+
+도커 안에 방금 넣은 war 파일 넣기
+cd /usr/local/
+docker cp Final_project.war myweb:/usr/local/tomcat/webapps
+
+
+
+
+도커 컨테이너에 war파일 복사
+docker cp jspboard.war myweb:/usr/local/tomcat/webapps/
+컨테이너를 다시 이미지로 만들기
+docker commit myweb myw01:latest
+

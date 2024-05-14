@@ -1,0 +1,5 @@
+-- 상영 정보의  총좌석수
+select shallSeat from screenhall sh where sh.shallno = (select shallno from screen sc where sno = 9);
+ -- 상영 정보의 채워진 좌석수
+select count(td.ticketno) from ticketdetail td inner join ticket tk on td.ticketno = tk.ticketno where td.sno = (select sno from screen sc where sno = 9) and tk.ticketDelyn = 1;
+

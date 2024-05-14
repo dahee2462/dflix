@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//bybatis.org//DTD Config 3.0/EN" 
+					 		   "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<!-- 풀네임이 길때 별칭사용을 위해 configuration를 사용한다 -->
+		<!-- VO가 없으면 오류가 나기 때문에 클래스를 생성한 뒤에 typeAlias를 진행 -->
+		<typeAlias type="ezen.dteam.vo.BoardVO" alias="BoardVO"/>
+		<typeAlias type="ezen.dteam.vo.CinemaReplyVO" alias="CinemaReplyVO"/>
+		<typeAlias type="ezen.dteam.vo.CinemaVO" alias="CinemaVO"/>
+		<typeAlias type="ezen.dteam.vo.FileVO" alias="FileVO"/>
+		<typeAlias type="ezen.dteam.vo.IcmtReplyVO" alias="IcmtReplyVO"/>
+		<typeAlias type="ezen.dteam.vo.MemberVO" alias="MemberVO"/>
+		<typeAlias type="ezen.dteam.vo.UserVO" alias="UserVO"/>
+		<typeAlias type="ezen.dteam.vo.ScreenHallVO" alias="ScreenHallVO"/>
+		<typeAlias type="ezen.dteam.vo.ScreenSeatVO" alias="ScreenSeatVO"/>
+		<typeAlias type="ezen.dteam.vo.ScreenVO" alias="ScreenVO"/>
+		<typeAlias type="ezen.dteam.vo.TheaterVO" alias="TheaterVO"/>
+		<typeAlias type="ezen.dteam.vo.TicketDetailVO" alias="TicketDetailVO"/>
+		<typeAlias type="ezen.dteam.vo.TicketVO" alias="TicketVO"/>
+		<typeAlias type="ezen.dteam.vo.PagingVO" alias="PagingVO"/>
+	</typeAliases>
+</configuration>
+

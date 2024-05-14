@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://43.201.27.35/dflix?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=UTC" />
+		<property name="username" value="awsuser" />
+		<property name="password" value="@rootAWS3db" />
+	</bean>
+	
+	<!-- mybatis 개체 DB를 알아서 열고 닫고 해주는 bean -->
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<!-- mybatis 설정에 걸려있는 파일 위치가 어디냐 / mybatis-config.xml은 무조건 있어야한다.-->
+		<property name="configLocation" value="classpath:mybatis_config.xml" />
+		<property name="mapperLocations" value="classpath:mapper/**/*Mapper.xml" />
+	</bean>
+	
+	<!-- psmt = conn.prepareStatement(sql); 이 문장과 같음. -->
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory" />
+	</bean>
+</beans>

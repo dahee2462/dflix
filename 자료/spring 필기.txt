@@ -1,0 +1,147 @@
+Spring MVC 패키지 이름은 3뎁스로 들어감
+보통 목적/회사명/프로젝트 이름
+
+jsp에서 
+가상경로 servlet 을 사용할때 foward를 쓰면
+request.redirect와 반대로 그대로 연결해줘서 유지를 시킨다.
+
+하지만 무한 증식 가능성이 있기때문에 내놓은 방안은
+frontController를 내놓음.
+@webservlet을 가짐
+예) @Webservlet("*.do") ->모든 do가 들어가는 파일은 이쪽 경로로 서블릿 해라
+
+매서드를 사용하면 board / list / view 등 각 컨트롤러에 넣을 수 있음.
+
+spring farmework에서는 dispathurservlet이 가장 중요함
+jsp에서 frontcontroller와 동일
+
+@RequestMapping은 url이 맵핑됐을때 이 url이 호출된다.
+url 정보는 value값( /=>index페이지 )
+String home에서는 /일때 밑에 있는 데이터를 호출해라.
+
+was 컨테이너
+
+디렉토리 관리를 잘 해줘야함.
+
+베이스 uri 라는 것은 컨트롤러에 uri들을 미리 지정하는 것
+
+디스페쳐서블릿 애들끼리 클래스를 가지고 있는 어노테이션이 @Controller
+
+web.xml에 filter는 디스페쳐 서블릿보다 더 바깥쪽에 있는 애다.
+나중에 filter를 활용하면 비속어 입력되지 못하게 하는 것들 등 구현 가능
+filter는 web.xml에서 servlet 상단에다가 넣으면 됨
+
+하나의 가상경로에 메소드가 다르면 두개를 쓸 수가 있음.
+
+Main.do안에 링크가 하나 있음.<a>태그에 리스트로 이동하는 태그가 잇음.
+list.do가 경로지만 보여지는 게 list.jsp다 => foward
+등록버튼이 있는데  가상경로가 write.do이고 보여지는게 jsp여도 => foward
+작성 완료 후 저장을 눌렀을때 다른 페이지를 이동을 해야하는게 => redirect
+
+화면에 필요한 데이터를 가공하는 것이 비지니스 로직 => 비지니스 로직을 컨트롤러에 빼면 된다.
+
+EL은 익스프레션 랭귀지라고 함.
+el태그 말고 다른 태그가 하나 더 있음. -> jstl -> 라이브러리 필요
+
+태그립이 있어야하만 jstl 확장태그를 쓸 수 있다.
+jstl은 확장태그다
+
+c:forEach(for문)에서 한칸띄고 ctrl + space bar 하면 요소들이 나옴
+varStatus는 현재 상태에 대한 객체를 담고 있는 변수
+
+el태그로 값을 받아올 때 page 스코프에 담긴다.
+
+데이터를 받아오는 양이 많으면 VO로 받을 수 있다.
+
+백단에서 MVC는
+controller가 화면에서 정보를 받으면
+service(Interface)는 정보를 받아 DAO한테 찾아달라고 한다.
+DAO는 sevice한테 받은 정보를 dB에서 찾아주고 같은 값을 service한테 넘긴다.
+service는 DAO한테 받은 정보를 가지고 맞는지 틀린지 확인하고 controller한테 넘긴다.
+
+@Repsitory 어노테이션도 Component와 비슷함.
+하지만 외부 자원과의 연결을 맡은 객체를 의미하는 어노테이션임.
+
+Model은 화면으로 보내기위해 필요한 객체
+
+mybatis는 스프링에 있는 것이 아니라 직접 사용할 수 있는 라이브러리이다.
+
+별칭을 지정할때엔 클래스를 생성하고 별칭을 지정해야 한다. 
+이유는 디스패쳐서블릿이 실행될때 실제 파일이 존재해야하기 때문에
+
+mapper에 namespace는 중복되면 안된다
+select에선 id가 경로를 찾는 것이다.
+
+query의 결과가 한개일때만 select를 사용할 수 있다?
+
+워크스페이스에 있는 프로젝트명이랑 패키지명이 겹치면 디버깅 할 때 안 좋다.
+
+pom.xml에서 버전을 바꾸면 프로젝트를 업데이트 해줘야한다.
+dependencies는 여러 라이브러리를 자동화해서 관리해주는 의존화다.
+필요한 라이브러리를 쭉 내려받는다.
+
+메인패키지 안쪽에다 넣어야 반영이 되고 테스트에는 안됨
+
+홈 string에서 return 응답은 dispatcher servlet으로 돌아감
+
+
+모델이 담는 것은 request와 동일
+
+마이바티스 사용 시 라이브러리를 다운받아야함
+
+작성 순서는 
+VO클래스 -> mybatis 컨피그 -> mapper -> DAO -> service -> seviceimpl -> controller
+
+requestMapping에서 인터셉터에서 쓸 수 있는데 인터셉터는 어느 때 동작하게 된다?
+인터셉터는 dispatcher servlet이 컨트롤러로 처리할 시점에 실행된다.
+ex) 인증과 보안을 가장 많이 사용하고 있음.
+서블릿콘텍스트에서 interceptor에서 mappin path는 경로이다.
+빈ref를 작성할때는 앞자리가 소문자여야한다.
+
+필터는 dispatcher servlet으로 가는 경로 전에 걸러주는 것
+
+scheduled 어노테이션에서 사용하는 cron 표현식은
+초 : 0~59 범위 ( , - * / )
+분 : 0~59 범위 ( , - * / )
+시 : 0~23 범위 ( , - * / )
+일 : 1~31 범위 ( , - * ? / L W )
+월 : 1~12 or JAN~DEC 범위 ( , - * ? / )
+요일 : 0~6 or SUN~SAT qjadnl ( , - * ? / L # )
+연도 : empty or 1970 ~ 2099 ( , - * / )
+
+spring security 테이블이 칼럼명이 정해져있음.
+userid, password, enabled, authority의 4개 칼럼은 시큐리티에서 무조건 있어야함.
+
+< 스프링 시큐리티 >
+ - 스프링 기반의 어플리케이션의 보안을 담당하는 프레임워크이다.
+ - 필터와 인터셉터 기반으로 동작하며 MVC와 분리되어 관리 동작 된다.
+디스패처 서블릿보다 더 앞에서 동작 가능(task)
+ - delegationgFilterProxy 객체를 사용하여 dispatcher servlet이 가지고 있는 객체를 사용할 있다.
+
+ - 용어
+   접근 주치(principal) : 보호된 대상에 접근하는 유저
+   인증(authentication) : 인증은 '증명하자'라는 의미이다. 예를들어, 유저 아이디와 비밀번호를 통하여 로그인이 뚫리는 과정
+   인가(authorization) : '권한부여'나 '허가'와 같은 의미로 사용된다.
+   권한 : 접근 주체가 어플리케이션의 동작을 수행할 수 있도록 허락되었는지를 결정할대 다됴
+ - 스프링 시큐리티의 필터 종류
+
+SecurityContextPersistenceFilter : 설정정보를 읽어받아들이는 필터
+LogoutFilter : 설정된 로그아웃 url로 오는 요청을 감시하며 해당 유저를 로그아웃처리하는 필터
+authenticationFilter : 사용자가 입력한 아이디, 패스워드 정보를 사용하여 인증처리하는 필터
+	1. authenticationManager를 통해 인증 실행
+	2. 인증 성공 시, authentication 객체를 securityContext에 저장 후 authenticationSuccessHandler
+	3. 인증 실패 시, authenticationFilureHandler 실행
+
+DefaultLoginPageGeneratingFilter : 인증을 위한 로그인 폼url를 감시한다.
+BasicAuthenticationFilter : HTTP 기본 인증 헤더 감시처리
+
+시큐리티 파일은 무조건 spring bean configuration file로 만들어야함
+
+
+
+
+
+
+
+
+

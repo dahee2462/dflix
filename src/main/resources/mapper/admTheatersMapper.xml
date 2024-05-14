@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD config 3.0//EN"
+						"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ezen.dteam.mapper.admTheatersMapper">
+	<select id="selectAllTheater" resultType="TheaterVO">
+		select * from theater
+	</select>
+	
+	<select id="selectAllScreenHallofTno" parameterType="String" resultType="ScreenHallVO">
+		select * from screenHall where tno = #{value}
+	</select>
+	
+	<select id="selectScreenofshallno" parameterType="ScreenVO" resultType="ScreenVO">
+		select * from screen s inner join cinema c on s.cno = c.cno where shallno = #{shallno} and sday = #{sday} order by sstartTime
+	</select>
+	
+	<select id="selectCinema" resultType="CinemaVO">
+		select * from cinema where cprdtStatNm = "개봉"
+	</select>
+	
+	<select id="selectCshowTimeofCno" parameterType="int" resultType="String">
+		select cshowTime from cinema where cno = #{cno}
+	</select>
+	
+	<insert id="insertScreen" parameterType="ScreenVO">
+		INSERT INTO screen(sstartTime, sendTime, cno, shallno, sday)
+  		 VALUES (#{sstartTime}, #{sendTime},#{cno},#{shallno},#{sday});
+	</insert>
+	
+	<delete id="screenDelete" parameterType="String">
+		delete from screen where sno = #{value}
+	</delete>
+	
+</mapper>
