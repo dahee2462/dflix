@@ -6,9 +6,9 @@
 	<!-- Root Context: defines shared resources visible to all other web components -->
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://43.201.27.35/dflix?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=UTC" />
-		<property name="username" value="awsuser" />
-		<property name="password" value="@rootAWS3db" />
+		<property name="url" value="jdbc:mysql://127.0.0.1/dflix?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=UTC" />
+		<property name="username" value="dflix" />
+		<property name="password" value="ezen" />
 	</bean>
 	
 	<!-- mybatis 개체 DB를 알아서 열고 닫고 해주는 bean -->
