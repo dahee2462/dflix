@@ -27,6 +27,33 @@ Docker|Springframework 4.3.4||
 ## 📌 주요기능
 ### 1️⃣ 스프링 시큐리티
 
+* 스프링 시큐리티를 활용한 로그인, 회원가입 구현
+
+🖥️ 코드
+<details>
+<summary>security-context.xml</summary>
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/security-context.png" height="500px">
+</details>
+<details>
+<summary>UserAuthenticationService</summary>
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/UserAuthenticationService.png" height="500px">
+</details>
+<details>
+<summary>UserLoginSuccessHandler</summary>
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/UserLoginSuccessHandler.png" height="500px">
+</details>
+<details>
+<summary>UserLoginFailureHandler</summary>
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/UserLoginFailureHandler.png" height="200px">
+</details>
+<details>
+<summary>UserDeniedHandler</summary>
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/UserDeniedHandler.png" height="200px">
+</details>
+
+
+
+
 
 
 
