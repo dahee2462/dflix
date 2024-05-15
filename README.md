@@ -95,26 +95,54 @@ Docker|Springframework 4.3.4||
 
 ### 3️⃣ 아이디 찾기
 ✔️ Ajax를 활용하여 일치하는 회원정보 조회 -> alert창으로 아이디 출력
+
+
  🖥️ 코드
 <details>
 <summary>아이디 찾기 Ajax (JSP)</summary>
-<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/findIdAjax.png" height="500px">
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/findIdAjax.png" height="400px">
 </details>
 <details>
 <summary>User Controller</summary>
-<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/findIdController.png" height="500px">
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/findIdController.png" height="200px">
 </details>
 <details>
 <summary>User DAO</summary>
-<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/findIdDAO.png" height="500px">
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/findIdDAO.png" height="100px">
+</details>
+<details>
+<summary>User Mapper</summary>
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/findIdMapper.png" height="100px">
 </details>
 📷 뷰
 <details>
 <summary>아이디 찾기</summary>
 <img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EC%95%84%EC%9D%B4%EB%94%94%EC%B0%BE%EA%B8%B0.png" height="500px"><br><br>
 입력값이 일치하면 alert창으로 아이디 출력<br><br>
-<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EC%95%84%EC%9D%B4%EB%94%94%EC%B0%BE%EA%B8%B0%EC%95%8C%EB%A6%BC%EC%B0%BD.png" height="500px">
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EC%95%84%EC%9D%B4%EB%94%94%EC%B0%BE%EA%B8%B0%EC%95%8C%EB%A6%BC%EC%B0%BD.png" height="100px">
 </details>
+
+### 4️⃣ 회원정보 수정
+
+### 5️⃣ 회원탈퇴
+
+### 6️⃣ 나의 예매내역 조회
+
+### 7️⃣ 박스오피스, 상영예정작 목록 조회
+✔️ 영화API 사용하여 영화정보 조회
+
+✔️ 페이징
+
+### 8️⃣ 영화 상세 조회
+✔️ 영화API 사용하여 영화정보 조회
+
+✔️ Ajax를 사용하여 댓글구현
+
+
+
+
+
+
 
 
 
