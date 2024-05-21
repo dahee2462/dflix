@@ -195,7 +195,7 @@ Docker|Springframework 4.3.4||
 </details>
 <details>
 <summary>나의 예매 조회 Mapper</summary>
-<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EB%82%98%EC%9D%98%EC%98%88%EB%A7%A4%EC%A1%B0%ED%9A%8C%20mapper.png" height="400px">
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EB%82%98%EC%9D%98%EC%98%88%EB%A7%A4%EC%A1%B0%ED%9A%8C%20mapper.png" height="200px">
 </details>
 📷 뷰
 <details>
