@@ -22,10 +22,10 @@ AWS |JAVA(JSP, JDBC)|FileZila|
 Docker|Springframework 4.3.4||
 
 ## 💾 배포파일
-https://13.125.224.121/dflix/
+[참조링크 URL](13.125.224.121/dflix/)
 
 ## 📑 PPT
-https://www.canva.com/design/DAGF1QTOk5E/4yzUCz1FobAsmjJ4bjJ9ag/view?utm_content=DAGF1QTOk5E&utm_campaign=designshare&utm_medium=link&utm_source=editor
+[참조링크 URL](https://www.canva.com/design/DAGF1QTOk5E/4yzUCz1FobAsmjJ4bjJ9ag/view?utm_content=DAGF1QTOk5E&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 ## 📗 DB설계
 <img src="https://github.com/dahee2462/dflix/blob/master/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EB%AC%B8%EC%84%9C/04.%EC%82%B0%EC%B6%9C%EB%AC%BC%20%EC%A0%9C%EC%B6%9C/04.%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EC%84%A4%EA%B3%84%EC%84%9C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202024-05-14%20114807.png" height="650px">
