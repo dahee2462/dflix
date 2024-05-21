@@ -182,11 +182,9 @@ Docker|Springframework 4.3.4||
 <summary>나의 예매 조회 Mapper</summary>
 <img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EB%82%98%EC%9D%98%EC%98%88%EB%A7%A4%EC%A1%B0%ED%9A%8C%20mapper.png" height="200px">
 </details>
-📷 뷰
-<details>
-<summary>나의 예매내역 조회 화면</summary>
+📷 뷰<br><br>
 <img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EB%82%98%EC%9D%98%20%EC%98%88%EB%A7%A4%EB%82%B4%EC%97%AD%20%EC%A1%B0%ED%9A%8C%20%ED%99%94%EB%A9%B4.png" height="400px">
-</details>
+
 
 ## 7️⃣ 박스오피스, 상영예정작 목록 조회
 
