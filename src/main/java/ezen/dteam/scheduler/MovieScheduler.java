@@ -91,6 +91,7 @@ public class MovieScheduler {
 		LocalDate minusTwoMonth = today.minusMonths(1);
 		LocalDate plusOneMonth = today.plusMonths(1);
 		
+		
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyyMMdd"); // 포매터 사용으로 날짜 형식 변환 ex) 20240101 형태로
 		String formatMinusMonth = minusTwoMonth.format(formatter);
 		String formatPlusMonth = plusOneMonth.format(formatter);

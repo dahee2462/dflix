@@ -193,21 +193,18 @@ public class Ticket {
 		System.out.println("상영관타입: "+shallType);
 		System.out.println("상영관 위치: "+shallLocation);
 		System.out.println("인원: "+personNum+"명");
-		System.out.println("좌석번호: "+seatNosArray);
 		System.out.println("좌석: "+seats);
-		
-		System.out.println(seatNosArray[0]);
+		System.out.println("좌석번호: "+seatNosArray[0]);
 		
 		if (seatNosArray != null && seatNosArray.length > 0) {
 			String[] noArray = seatNosArray[0].split(",");
 			ticketSVC.insertTicket(mno);
-			int ticketno = ticketSVC.lastId();
-			
+			int ticketno = ticketSVC.lastId();			
 			
 			for(String sseatno : noArray) {	
 				
 				TicketDetailVO paramMap = new TicketDetailVO((Integer.parseInt(sseatno)), mno, sno);
-				paramMap .setTicketno(ticketno);
+				paramMap.setTicketno(ticketno);
 				
 				int result = ticketSVC.reserveTicket(paramMap);
 				

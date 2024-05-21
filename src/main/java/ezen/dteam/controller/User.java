@@ -94,6 +94,7 @@ public class User {
 		return service.searchId(vo);
 		
 	}
+	
 	@RequestMapping(value = "/findPw", method = RequestMethod.GET)
 	public String findPw() throws Exception{
 		
