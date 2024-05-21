@@ -52,7 +52,7 @@ security-context.xml<br><br>
 </details>
 
 📷 뷰<br><br>
-<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/login.png" height="400px">
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/login.png" height="300px">
 
 ## 2️⃣ 회원가입
 
@@ -84,7 +84,7 @@ security-context.xml<br><br>
 <img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/UserMapper%20.png" height="500px">
 </details>
 📷 뷰<br><br>
-<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/join.png" height="600px">
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/join.png" height="400px">
 <img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/id%EC%A4%91%EB%B3%B5%ED%99%95%EC%9D%B8.png" height="100px">
 
 
@@ -109,7 +109,7 @@ security-context.xml<br><br>
 <img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/findIdMapper.png" height="100px">
 </details>
 📷 뷰<br><br>
-<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EC%95%84%EC%9D%B4%EB%94%94%EC%B0%BE%EA%B8%B0.png" height="500px">
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EC%95%84%EC%9D%B4%EB%94%94%EC%B0%BE%EA%B8%B0.png" height="300px">
 입력값이 일치하면 alert창으로 아이디 출력<br><br>
 <img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EC%95%84%EC%9D%B4%EB%94%94%EC%B0%BE%EA%B8%B0%EC%95%8C%EB%A6%BC%EC%B0%BD.png" height="100px">
 
