@@ -139,7 +139,7 @@ Docker|Springframework 4.3.4||
  완료시 DB 업데이트, 회원탈퇴도 동일
 </details>
 
-## 극장시간표 관리(관리자)
+## ⏹️ 극장시간표 관리(관리자)
 
 📷 뷰
 <details>
@@ -152,7 +152,7 @@ Docker|Springframework 4.3.4||
 <img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EA%B7%B9%EC%9E%A5%EC%8B%9C%EA%B0%84%ED%91%9C%EA%B4%80%EB%A6%AC%20%EB%AA%A9%EB%A1%9D%EC%A1%B0%ED%9A%8C%20%ED%99%94%EB%A9%B4.png" height="400px">
 </details>
 
-## 영화 예매
+## ⏹️ 영화 예매
 
 📷 뷰
 <details>
