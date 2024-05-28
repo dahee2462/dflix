@@ -179,16 +179,16 @@ security-context.xml<br><br>
 🖥️ 코드
 <details>
 <summary>나의 예매 조회(JSP)</summary>
-<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EB%82%98%EC%9D%98%EC%98%88%EB%A7%A4%EC%A1%B0%ED%9A%8C%20jsp.png" height="400px"><br><br>
- <img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EB%82%98%EC%9D%98%EC%98%88%EB%A7%A4%EC%A1%B0%ED%9A%8C%20jsp2.png" height="100px">
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EB%82%98%EC%9D%98%EC%98%88%EB%A7%A4%EC%A1%B0%ED%9A%8C%20jsp.png" height="500px"><br><br>
+ <img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EB%82%98%EC%9D%98%EC%98%88%EB%A7%A4%EC%A1%B0%ED%9A%8C%20jsp2.png" height="200px">
 </details>
 <details>
 <summary>나의 예매 조회 Controller</summary>
-<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EB%82%98%EC%9D%98%EC%98%88%EB%A7%A4%EC%A1%B0%ED%9A%8C%20controller.png" height="400px">
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EB%82%98%EC%9D%98%EC%98%88%EB%A7%A4%EC%A1%B0%ED%9A%8C%20controller.png" height="500px">
 </details>
 <details>
 <summary>나의 예매 조회 Mapper</summary>
-<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EB%82%98%EC%9D%98%EC%98%88%EB%A7%A4%EC%A1%B0%ED%9A%8C%20mapper.png" height="200px">
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EB%82%98%EC%9D%98%EC%98%88%EB%A7%A4%EC%A1%B0%ED%9A%8C%20mapper.png" height="300px">
 </details>
 📷 뷰<br><br>
 <img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EB%82%98%EC%9D%98%20%EC%98%88%EB%A7%A4%EB%82%B4%EC%97%AD%20%EC%A1%B0%ED%9A%8C%20%ED%99%94%EB%A9%B4.png" height="400px">
@@ -240,7 +240,7 @@ security-context.xml<br><br>
 </details>
 <details>
 <summary>Controller</summary>
-<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EC%98%81%ED%99%94%20%EC%83%81%EC%84%B8%20controller.png" height="100px">
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EC%98%81%ED%99%94%20%EC%83%81%EC%84%B8%20controller.png" height="150px">
 </details>
 <details>
 <summary>Mapper</summary>
