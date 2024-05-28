@@ -127,14 +127,14 @@ security-context.xml<br><br>
  비밀번호 확인 컨트롤러<br><br>
 <img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%EB%B9%84%EB%B2%88%ED%99%95%EC%9D%B8%20%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC.png" height="400px"><br><br>
 회원정보 수정 컨트롤러<br><br>
-<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%ED%9A%8C%EC%9B%90%EC%A0%95%EB%B3%B4%EB%B3%80%EA%B2%BD.png" height="400px"><br><br>
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%ED%9A%8C%EC%9B%90%EC%A0%95%EB%B3%B4%EB%B3%80%EA%B2%BD%20%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC.png" height="400px"><br><br>
 회원탈퇴 컨트롤러<br><br>
 <img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/%ED%9A%8C%EC%9B%90%ED%83%88%ED%87%B4%20%EC%BB%A8%ED%8A%B8%EB%A1%A4%EB%9F%AC.png" height="400px">
 </details>
 
 <details>
 <summary>MyInfo Mapper</summary>
-<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/MyInfoMapper.png" height="400px">
+<img src="https://github.com/dahee2462/dflix/blob/master/%EC%9E%90%EB%A3%8C/%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7/MyInfoMapper.png" height="200px">
 </details>
 📷 뷰
 <details>
