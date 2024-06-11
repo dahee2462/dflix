@@ -20,9 +20,10 @@ JDK 13.0.2|Javascript|StarUML|
 GitHub|JQuery|ERMaster|
 AWS |JAVA(JSP, JDBC)|FileZila|
 Docker|Springframework 4.3.4||
-
+<!--
 ## 💾 배포파일
 [참조링크 URL](http://13.125.224.121/dflix/)
+-->
 
 ## 📑 PPT
 [참조링크 URL](https://www.canva.com/design/DAGF1QTOk5E/4yzUCz1FobAsmjJ4bjJ9ag/view?utm_content=DAGF1QTOk5E&utm_campaign=designshare&utm_medium=link&utm_source=editor)
